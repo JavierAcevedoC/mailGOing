@@ -9,9 +9,15 @@ Here the requirement in spanish coz its my prefer lang.
 - [ ] Reintentar envios fallidos auto.
 - [ ] Mantener registro de correos enviados y fallidos.
 
-Usage:
+Usage for plain:
 ```sh
 curl -X POST http://localhost:8080/send-email \                   
+-H "Content-Type: application/json" \
+-d '{"to":"destinatario@gmail.com","subject":"Hola","body":"Este es un correo de prueba"}'
+```
+Usage for default template:
+```sh
+curl -X POST http://localhost:8080/send-email-template \                   
 -H "Content-Type: application/json" \
 -d '{"to":"destinatario@gmail.com","subject":"Hola","body":"Este es un correo de prueba"}'
 ```
