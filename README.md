@@ -23,4 +23,4 @@ curl -X POST http://localhost:8080/send-email-template \
 ```
 
 Example:
-!['test'](pics/email_test.png)
+!['test'](pics/email_test.png) .
