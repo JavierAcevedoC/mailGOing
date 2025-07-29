@@ -15,6 +15,7 @@ FROM alpine:latest
 
 WORKDIR /app
 
+COPY .env ./
 COPY --from=builder /app/mailgoing .
 
 EXPOSE 8080
