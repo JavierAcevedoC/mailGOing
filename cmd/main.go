@@ -9,5 +9,5 @@ func main() {
 	config.LoadConfig()
 
 	r := api.SetupRouter()
-	r.Run(":8080")
+	r.Run(":8090")
 }

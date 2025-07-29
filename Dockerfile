@@ -17,8 +17,7 @@ WORKDIR /app
 
 COPY .env ./
 COPY --from=builder /app/mailgoing .
-
-EXPOSE 8080
+EXPOSE 8090
 
 CMD ["./mailgoing"]
 
